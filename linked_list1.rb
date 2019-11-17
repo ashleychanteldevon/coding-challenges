@@ -63,6 +63,6 @@ node4 = LinkedListNode.new(82, node3)
 node5 = LinkedListNode.new(4, node4)
 
 print_values(node5)
-puts "---reverse!---"
+puts "- - reverse - -"
 revlist = reverse_list(node5)
 print_values(revlist)
