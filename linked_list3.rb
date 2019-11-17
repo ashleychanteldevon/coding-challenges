@@ -9,7 +9,7 @@ end
 
 def print_values(list_node)
   if list_node
-    print "#{list_node.value} --> "
+    print "#{list_node.value} => "
     print_values(list_node.next_node)
   else
     print "nil\n"
@@ -34,10 +34,10 @@ def infinite_loop?(list)
 end
 
 node1 = LinkedListNode.new(37)
-node2 = LinkedListNode.new(99, node1)
+node2 = LinkedListNode.new(9, node1)
 node3 = LinkedListNode.new(12, node2)
-node4 = LinkedListNode.new(45, node3)
-node5 = LinkedListNode.new(21, node4)
+node4 = LinkedListNode.new(82, node3)
+node5 = LinkedListNode.new(4, node4)
 
 puts infinite_loop?(node5)
 node1.next_node = node5 
